@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './Assets/Logo/logoOriginal.svg';
 import './App.css';
 
 function App() {
@@ -23,3 +23,5 @@ function App() {
 }
 
 export default App;
+
+// Comment creer un projet react-native ?

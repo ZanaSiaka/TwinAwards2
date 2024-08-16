@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "designer", "lemon milk", sans-serif; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  height: 100%;
+  /* width: 100vw; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100vw;
+  /* flex: 1; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBarre{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  max-height: 80px;
+  background-color: #222/* black */;
+  width: 100vw;
+  font-family: "lemon milk";
+  position: sticky;
+  top: 0;
+}
+
+.navBarre img{
+  width: 25%;
+  height: 150px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.list-group{
+  display: flex;
+  color: white;
+  width: 50%;
+  justify-content: space-evenly;
+  list-style: none;
+  color: white
+}
+
+.link-list-group {
+  text-decoration: none;
+  color: white;
+
+}
+
+.link-list-group:hover{
+  color: #FFB700;
+}
+
+.linkToConnectDiv{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkToConnect{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border: white 2px solid;
+  background-color: #FFB700 /* #FFEA00 */;
+  height: 50px;
+}
+
+.linkToConnect:hover{
+  background-color: #FFEA00;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+footer img{
+  width: 100px;
+}
+
+footer ul{
+  font-family: 'lemon milk';
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+footer ul .footerLink {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer ul .footerLink:hover{
+  color: #FFB700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer hr{
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: white;
+  font-family: 'poppins';
+}
+
+#connexion{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'lemon milk';
+  /* z-index: -1; */
+}
+
+#connexion h1 {
+  font-size: 2em;
+  color: #FFB700;
+  margin-bottom: 40px;
+}
+
+#connexion form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#connexion form input {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  background-color: #333;
+  border: solid white 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: 'lemon milk';
+  color: white;
+}
+
+#connexion form input:focus{
+  outline: none;
+}
+
+#connexion form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 35px;
+  background-color: #FFB700;
+  border: none;
+  font-family: 'lemon milk';
+  color: white;
+  margin: 20px 0 15px 0;
+}
+
+#connexion span {
+  font-size: 1.2em;
+}
+
+#connexion span .adminLog{
+  text-decoration: none;
+  color: white;
+}
+
+#connexion span .adminLog:hover{
+  color: #FFB700;
 }
